@@ -191,7 +191,6 @@ function charAt(str) {
     let result = [];
     for (let j = 0; j < ex_str.length; j++) {
       if (ex_str[i] === "t" || ex_str[i] === "c") {
-        console.log(786);
       }
     }
   }
