@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            font-size: 40px;
+
+            color: rgb(80, 27, 27);
+        }
+
+        #nav-link {
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: rgb(55, 193, 99);
+        }
+
+        .nav-list {
+            display: flex;
+            font-size: 20px;
+            margin-top: -26px;
+            margin-left: 20px;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+
+        .intro {
+            float: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-header">
+            <a href="index.html" id="nav-link">
+                <span class="logo"><strong>Go!</strong></span>
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Servive</li>
+                    <li>contact</li>
+                </ul>
+            </a>
+        </div>
+        <div>
+            <div class="form-group">
+                <h3>The Bignner.......</h3>
+                <aside>
+                    <h5>Skill & work</h5>
+                    <form class="nav-form" action="" method="post" id="prime">
+                        <label>
+                            <input type="text" id="number" name="number">
+                            <input type="submit" />
+                        </label>
+                    </form>
+                    <div id="output"></div>
+                </aside>
+            </div>
+            <div class="intro">
+                <h5>Introduction</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus, id fuga ea omnis aliquam
+                    sapiente alias molestias impedit praesentium a, hic error ab tempora iusto dicta ut consequatur?
+                    Velit
+                    expedita minima beatae maxime, neque suscipit excepturi culpa cupiditate iusto dolore veniam id
+                    harum
+                    quos nisi! Officiis ab illo repudiandae?
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        (function () {
+
+            var isPrimeNumber = function (number) {
+                if (number == 1 || number == 2) {
+                    return true;
+                }
+                for (var i = 2; i < number; i++) {
+
+                    if (number % i == 0) {
+                        return false;
+                    }
+                }
+                return true;
+            };
+
+            var unique = function (arr) {
+                return arr.reduce(function (p, c) {
+                    if (p.indexOf(c) < 0) {
+                        p.push(c);
+                    }
+                    return p;
+                }, []);
+            };
+
+            var nextPrime = function (number) {
+                var n;
+                if (number % 2 == 0) {
+                    number++;
+                }
+
+                for (n = number; !isPrimeNumber(n); n += 1) {
+
+                }
+                return n;
+            };
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var form = document.querySelector("#prime"),
+                    output = document.querySelector("#output");
+
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    var n = document.querySelector("#number").value;
+                    var text = [];
+                    for (var i = 0; i < n; ++i) {
+                        text.push(nextPrime(i));
+                    }
+                    output.innerHTML = unique(text).join(" ");
+                }, false);
+
+            });
+
+
+        })();
+
+    </script>
+</body>
+
+</html>

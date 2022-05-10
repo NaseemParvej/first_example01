@@ -1,0 +1,120 @@
+.div-header {
+  /* md-blue #1C00CB, dr-blue#000583 ; lght: blue #2746f2; */
+
+  background: rgb(47,64,158);
+  background: linear-gradient(90deg, rgba(47,64,158,1) 0%, rgba(75,53,212,1) 0%, rgba(53,62,170,1) 10%, rgba(45,51,142,1) 28%, rgba(37,41,114,0.9867297260701156) 57%, rgba(34,37,104,1) 64%, rgba(36,38,87,1) 100%);
+  text-align: center;
+  padding-top: 16px;
+  height: 180px;
+}
+.check-circle{
+    color: rgb(168, 178, 164);
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.header-text{
+    font-size: 28px;
+    display: block;
+margin-top: 6px;
+    color: rgb(210, 216, 222);
+}
+.header-para{
+    color:  rgb(210, 216, 222);
+    margin-top: -12px;
+}
+
+.div-section {
+    margin-top: -20px;
+    background-color: aliceblue;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  height: 400px;
+    overflow: scroll;
+  
+}
+/* .div-section section::-webkit-scrollbar {
+    width: 10px;
+  }
+   */
+
+.card-list {
+  margin-top: 20px !important;
+  /* padding-top: 20px ; 
+   margin-left: 10px; */
+}
+.head-para {
+  margin-top: -10px;
+}
+.div-2 {
+  margin-left: 16px;
+}
+.div-head {
+  padding: 10px;
+  margin-top: 20px;
+  /* margin-right: 16px;
+  margin-left: 16px; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.bill-header{
+    color: blue;
+    font-size: 17px;
+}
+.table-bill{
+    font-size: 15px;
+}
+.div-bill{
+    margin-left: 10px;
+}
+.div-details {
+    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  /* margin-right: 16px;
+  margin-left: 16px; */
+  margin-top: 25px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.total-details{
+    font-size: smaller;
+    margin-top: 20px;
+    padding: 26px;
+    border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+span{
+    color: cadetblue;
+    
+}
+h4{
+    margin-top: 4px;
+    font-size: 18px;
+}
+.div-btn{
+    
+    text-align: center;
+    
+}
+.done-btn{
+    color: aliceblue;
+    height: 40px;
+    border-radius: 6px;
+    width: 95%;
+    
+  background: rgb(47,64,158);
+  background: linear-gradient(90deg, rgba(47,64,158,1) 0%, rgba(75,53,212,1) 0%, rgba(53,62,170,1) 10%, rgba(45,51,142,1) 28%, rgba(37,41,114,0.9867297260701156) 57%, rgba(34,37,104,1) 64%, rgba(36,38,87,1) 100%);
+
+}
+
