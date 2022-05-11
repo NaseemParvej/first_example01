@@ -190,9 +190,11 @@ function charAt(str) {
     ex_str.push(str[i]);
     let result = [];
     for (let j = 0; j < ex_str.length; j++) {
-      if (ex_str[i] === "t" || ex_str[i] === "c") {
+      if (ex_str[j] === "t" || ex_str[j] === "c") {
+        result.push(ex_str[j]);
       }
     }
+    console.log(result);
   }
 }
 
