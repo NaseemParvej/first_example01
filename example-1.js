@@ -183,19 +183,51 @@
 // }
 // out(20);
 ///--------------------------------
+//------Slice method(index, remove) -- remove elments from an array---------
 
-function charAt(str) {
-  let ex_str = [];
-  for (let i = 0; i < str.length; i++) {
-    ex_str.push(str[i]);
-    let result = [];
-    for (let j = 0; j < ex_str.length; j++) {
-      if (ex_str[j] === "t" || ex_str[j] === "c") {
-        result.push(ex_str[j]);
-      }
-    }
-    console.log(result);
-  }
+// let charAt = "Get remove characters of string";
+// console.log(charAt.length / 2);
+
+// function abc(str) {
+//   console.log(str.slice(1, 6));
+// }
+// abc("the path is not found.");
+
+// console.log("remove element".slice(-3));
+
+// // console.log("Temove element".substring(4, 6));
+
+// console.log(false < 1);
+
+//----------------------------
+
+// function test() {
+//   var sub_array = [];
+//   var super_array = [];
+//   for (var i = 1; i <= 4; i++) {
+//     sub_array.push(i);
+//     super_array.push(sub_array);
+//   }
+//   console.log(super_array);
+// }
+// test();
+//result-4 time array----
+// [ [ 1, 2, 3, 4 ], [ 1, 2, 3, 4 ], [ 1, 2, 3, 4 ], [ 1, 2, 3, 4 ] ]
+
+// //----adding array--------------------
+// function add(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i];
+//   }
+
+//   return sum;
+// }
+
+// console.log(add([1, 2, 3, 4, 5]));//result-15;
+
+//-------------------------------------------------------
+function persentage(a, b) {
+  console.log(a % b === 0);
 }
-
-charAt("Get remove characters of string");
+persentage(100, 15);
