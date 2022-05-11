@@ -227,7 +227,34 @@
 // console.log(add([1, 2, 3, 4, 5]));//result-15;
 
 //-------------------------------------------------------
-function persentage(a, b) {
-  console.log(a % b === 0);
+// function persentage(a, b) {
+//   console.log(a % b === 0);
+// }
+// persentage(600, 100);
+
+//--------------------------------------------------
+// function percent(num, per) {
+//   return (num / per) * 100;
+// }
+// console.log(percent(320, 500));//result-64%;
+
+//----------------------------------------------
+
+//Basic JavaScript math operators
+// Write a function that takes 6 values (a,b,c,d,e,f) as arguments
+// Sum a and b
+// Then substract by c
+// Then multiply by d and divide by e
+// Finally raise to the power of f and return the result
+// Tipp: mind the order
+function operat(a, b, c, d, e, f) {
+  let sum = a + b;
+  let sub = sum - c;
+  let multy = sub * d;
+  let div = multy / e;
+  let power = div ** f;
+  console.log(power);
 }
-persentage(100, 15);
+operat(6, 5, 4, 3, 2, 1);
+operat(6, 2, 1, 4, 2, 3);
+operat(2, 3, 6, 4, 2, 3);
