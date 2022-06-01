@@ -33,3 +33,15 @@ function toCamelCase(str) {
     .join(" ");
 }
 console.log(toCamelCase("this IS a program")); //This Is A Program;
+
+/////////////=================================================================
+
+function isValidJSON(text) {
+  try {
+    JSON.parse(text);
+    return true;
+  } catch {
+    return false;
+  }
+}
+console.log(isValidJSON("10"));

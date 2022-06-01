@@ -5,15 +5,13 @@
 //   let new_arr;
 //   while (num != 0) {
 //     new_arr = num % 10;
-//     console.log(new_arr);
+//
 //     arrval = arrval * 10 + new_arr;
 //     num = Math.floor(num / 10);
 //   }
 //   return arrval;
 // }
 // console.log(reverse_n(123456));
-
-// console.log(Math.ceil(7.1), Math.floor(7.9));
 
 //---------------------------------------------------------------------
 
